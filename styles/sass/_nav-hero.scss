@@ -1,9 +1,19 @@
 @use "var" as *;
 
-.header-nav ul {
+.header-nav {
+    background-color: $light-pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    li {
-        list-style: none;
-        padding: 20px;
+    justify-content: flex-end;
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            padding: 20px;
+        }
     }
 }
+

@@ -274,7 +274,7 @@ p {
   letter-spacing: 0.2px;
 }
 
-li a {
+nav a {
   font-family: "Catamaran", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
@@ -283,10 +283,11 @@ li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-li a:hover, li a:focus {
+nav a:hover, nav a:focus {
+  color: #1D81CC;
   text-decoration: underline;
 }
-li a:visited {
+nav a:visited {
   color: #1D81CC;
 }
 
@@ -301,6 +302,19 @@ button {
   line-height: 29px;
 }
 
+.header-nav {
+  background-color: #FCDDE2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
