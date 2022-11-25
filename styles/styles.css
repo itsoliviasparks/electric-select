@@ -315,39 +315,34 @@ button {
   line-height: 29px;
 }
 
-.title-links {
-  padding-top: 100px;
-  border: solid 1px red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .header-nav {
-  background-color: red;
+  background-color: #FCDDE2;
   width: 100%;
-  position: fixed;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 .header-nav ul li {
   list-style: none;
-  padding: 20px;
 }
 .header-nav ul a {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 45px;
 }
 
 .header-title {
