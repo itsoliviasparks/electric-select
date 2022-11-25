@@ -1,3 +1,63 @@
 // Partials
 @use "var" as *;
 @use "setup";
+
+
+html {
+    background-color: $light-pink;
+    font-size: 62.5%;
+    font-family: 'Barlow', sans-serif;
+    color: $darker-grey;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 50vh;
+    padding: 40px 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+@mixin emblema-one-font($font-size) {
+    font-size: $font-size;
+    font-family: 'Emblema One', cursive;
+    color: $water-blue;
+  }
+  
+
+
+h1 {
+    @include emblema-one-font(10.46rem);
+    line-height: 87.3px;
+}
+
+h2 {
+    @include emblema-one-font(4.2rem);
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3.72rem;
+    color: $marine;
+}
+
+p {
+    font-size: 2.5rem;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+}
+
+button {
+    @include emblema-one-font(2rem);
+    color: $pale-grey;
+    justify-content: center;
+    line-height: 29px;
+}
