@@ -236,6 +236,7 @@ html {
 .wrapper {
   width: 87%;
   margin: 0 auto;
+  border: solid 1px hotpink;
 }
 
 section {
@@ -254,6 +255,11 @@ h1 {
   font-family: "Emblema One", cursive;
   color: #1D81CC;
   line-height: 87.3px;
+  text-transform: uppercase;
+  margin: 0;
+}
+h1 span {
+  display: block;
 }
 
 h2 {
@@ -265,7 +271,9 @@ h2 {
 h3 {
   font-family: "Barlow", sans-serif;
   font-size: 3.72rem;
+  letter-spacing: 0.3px;
   color: #042259;
+  margin: 0;
 }
 
 p {
@@ -291,6 +299,11 @@ nav a:visited {
   color: #1D81CC;
 }
 
+i {
+  color: #1D81CC;
+  font-size: 3rem;
+}
+
 button {
   font-size: 2rem;
   font-family: "Emblema One", cursive;
@@ -302,12 +315,21 @@ button {
   line-height: 29px;
 }
 
+.title-links {
+  padding-top: 100px;
+  border: solid 1px red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header-nav {
-  background-color: #FCDDE2;
+  background-color: red;
+  width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,4 +345,20 @@ button {
 .header-nav ul li {
   list-style: none;
   padding: 20px;
+}
+.header-nav ul a {
+  padding: 20px;
+}
+
+.header-title {
+  padding-top: 250px;
+  border: 1px solid green;
+}
+
+.social-media {
+  list-style: none;
+  border: solid 1px purple;
+}
+.social-media i {
+  padding: 7px;
 }

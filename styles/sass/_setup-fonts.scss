@@ -15,6 +15,7 @@ html {
 .wrapper {
     width: 87%;
     margin: 0 auto;
+    border: solid 1px hotpink;
 }
 
 section {
@@ -36,6 +37,11 @@ img {
 h1 {
     @include emblema-one-font(10.46rem);
     line-height: 87.3px;
+    text-transform: uppercase;
+    margin: 0;
+    span {
+        display: block
+    }
 }
 
 h2 {
@@ -45,7 +51,9 @@ h2 {
 h3 {
     font-family: 'Barlow', sans-serif;
     font-size: 3.72rem;
+    letter-spacing: 0.3px;
     color: $marine;
+    margin: 0;
 }
 
 p {
@@ -70,6 +78,11 @@ nav a {
     &:visited {
         color: $water-blue;
     }
+}
+
+i {
+    color: $water-blue;
+    font-size: 3rem;
 }
 
 button {

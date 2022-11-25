@@ -1,11 +1,16 @@
 @use "var" as *;
 
+.title-links {
+    padding-top: 100px;
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-nav {
-    background-color: $light-pink;
+    background-color: red;
+    width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: flex-end;
     ul {
@@ -14,6 +19,22 @@
             list-style: none;
             padding: 20px;
         }
+        a {
+            padding: 20px;
+        }
     }
 }
 
+.header-title {
+    padding-top: 250px;
+    border: 1px solid green;
+}
+
+.social-media {
+    list-style: none;
+    border: solid 1px purple;
+
+    i {
+        padding: 7px;
+    }
+}
