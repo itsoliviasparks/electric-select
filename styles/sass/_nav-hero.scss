@@ -1,12 +1,5 @@
 @use "var" as *;
 
-// .title-links {
-//     padding-top: 100px;
-//     border: solid 1px red;
-//     display: flex;
-//     justify-content: space-between;
-// }
-
 .header-nav {
     background-color: $light-pink;
     width: 100%;
@@ -14,6 +7,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    // how to keep at top of page?
     ul {
         display: flex;
         padding: 0;
@@ -29,15 +23,20 @@
     }
 }
 
-.header-title {
-    padding-top: 250px;
-    border: 1px solid green;
-}
-
-.social-media {
-    list-style: none;
-    border: solid 1px purple;
-    i {
-        padding: 7px;
+.title-socials {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    .title {
+        padding-top: 100px;
+    }
+    .socials {
+        list-style: none;
+        align-items: center;
+        padding: 0;
+        i {
+            padding: 7px;
+        }
     }
 }

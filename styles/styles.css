@@ -345,15 +345,27 @@ button {
   padding-left: 45px;
 }
 
-.header-title {
-  padding-top: 250px;
-  border: 1px solid green;
+.title-socials {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
-
-.social-media {
+.title-socials .title {
+  padding-top: 100px;
+}
+.title-socials .socials {
   list-style: none;
-  border: solid 1px purple;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
-.social-media i {
+.title-socials .socials i {
   padding: 7px;
 }
