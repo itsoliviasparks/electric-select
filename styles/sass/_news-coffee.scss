@@ -1,0 +1,32 @@
+@use "var" as *;
+
+.news-coffee ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 0;
+        li {
+            list-style: none;
+            width: 31%;
+        }
+    }
+
+.coffee {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 350px;
+        height: 350px;
+    }
+    .coffee-text {
+        padding-left: 30px;
+        width: calc(100% - 350px);
+        h2 {
+            text-align: left;
+            padding-top: 0;
+        }
+        button {
+            color: $pale-grey;
+            background-color: $marine;
+        }
+    }
+}

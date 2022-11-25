@@ -236,12 +236,12 @@ html {
 .wrapper {
   width: 87%;
   margin: 0 auto;
+  border: solid 2px black;
 }
 
 header,
 section {
   min-height: 100vh;
-  padding-bottom: 40px 0;
 }
 
 img {
@@ -253,9 +253,9 @@ img {
 h1 {
   font-size: 10.46rem;
   font-family: "Emblema One", cursive;
+  text-transform: uppercase;
   color: #1D81CC;
   line-height: 87.3px;
-  text-transform: uppercase;
   margin: 0;
 }
 h1 span {
@@ -265,7 +265,12 @@ h1 span {
 h2 {
   font-size: 4.2rem;
   font-family: "Emblema One", cursive;
+  text-transform: uppercase;
   color: #1D81CC;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 h3 {
@@ -280,6 +285,7 @@ p {
   font-size: 2.5rem;
   line-height: 29px;
   letter-spacing: 0.2px;
+  margin: 0;
 }
 
 nav a {
@@ -307,12 +313,18 @@ i {
 button {
   font-size: 2rem;
   font-family: "Emblema One", cursive;
+  text-transform: uppercase;
   color: #1D81CC;
-  color: #F0F5FF;
+  color: #042259;
+  background-color: #F5C8CF;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 29px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 15px;
+  margin: 30px 0;
 }
 
 .header-nav {
@@ -374,4 +386,43 @@ button {
   top: 0;
   right: 0;
   z-index: -1;
+}
+
+.news-coffee ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 85px 0;
+}
+.news-coffee ul li {
+  list-style: none;
+  width: 31%;
+}
+
+.coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee img {
+  width: 350px;
+  height: 350px;
+}
+.coffee .coffee-text {
+  padding-left: 30px;
+  width: calc(100% - 350px);
+}
+.coffee .coffee-text h2 {
+  text-align: left;
+  padding-top: 0;
+}
+.coffee .coffee-text button {
+  color: #F0F5FF;
+  background-color: #042259;
 }

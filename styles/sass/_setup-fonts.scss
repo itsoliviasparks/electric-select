@@ -15,12 +15,12 @@ html {
 .wrapper {
     width: 87%;
     margin: 0 auto;
+    border: solid 2px black;
 }
 
 header,
 section {
     min-height: 100vh;
-    padding-bottom: 40px 0;
 }
 
 img {
@@ -31,13 +31,13 @@ img {
 @mixin emblema-one-font($font-size) {
     font-size: $font-size;
     font-family: 'Emblema One', cursive;
+    text-transform: uppercase;
     color: $water-blue;
   }
   
 h1 {
     @include emblema-one-font(10.46rem);
     line-height: 87.3px;
-    text-transform: uppercase;
     margin: 0;
     span {
         display: block
@@ -46,6 +46,10 @@ h1 {
 
 h2 {
     @include emblema-one-font(4.2rem);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 h3 {
@@ -60,6 +64,7 @@ p {
     font-size: 2.5rem;
     line-height: 29px;
     letter-spacing: 0.2px;
+    margin: 0;
 }
 
 nav a {
@@ -87,7 +92,12 @@ i {
 
 button {
     @include emblema-one-font(2rem);
-    color: $pale-grey;
+    color: $marine;
+    background-color: $pale-rose;
     justify-content: center;
     line-height: 29px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 15px;
+    margin: 30px 0;
 }
