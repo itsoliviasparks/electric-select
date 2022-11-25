@@ -1,0 +1,9 @@
+@use "var" as *;
+
+.header-nav ul {
+    display: flex;
+    li {
+        list-style: none;
+        padding: 20px;
+    }
+}
