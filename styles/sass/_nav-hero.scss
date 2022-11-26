@@ -1,13 +1,10 @@
 @use "var" as *;
 
 .header-nav {
-    // background-color: $light-pink;
-    width: 100%;
     height: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    // how to keep at top of page?
     ul {
         display: flex;
         padding: 0;

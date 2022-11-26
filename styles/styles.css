@@ -237,7 +237,6 @@ html {
   width: 87%;
   max-width: 1200px;
   margin: 0 auto;
-  border: solid 2px black;
 }
 
 header,
@@ -394,7 +393,6 @@ footer .copyright a:visited {
 }
 
 .header-nav {
-  width: 100%;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,28 +506,47 @@ footer .copyright a:visited {
   list-style: none;
 }
 
-.blog img {
-  width: 50%;
-  height: auto;
+.blog-post {
+  position: relative;
+}
+.blog-post .right {
+  right: 0;
+}
+.blog-post .left {
+  left: 0;
+}
+.blog-post img {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
 }
 
 .blog-text {
-  width: 50%;
-  padding: 30px;
-  border: solid 1px hotpink;
-}
-.blog-text h2 {
-  text-align: left;
-  width: 65%;
-}
-
-.blog-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 70px;
+  width: 50%;
+  height: 50vw;
+}
+.blog-text h2 {
+  padding: 0;
+  width: 40%;
+  text-align: left;
+}
+.blog-text.left {
+  margin-left: calc(50% + 70px);
+  padding-right: 0;
 }
 
 .footer-links {
@@ -559,7 +576,7 @@ footer .copyright a:visited {
 
 footer {
   background-color: #F0F5FF;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 footer .wrapper {
   display: -webkit-box;
@@ -604,6 +621,7 @@ footer li {
   padding-bottom: 10px;
 }
 footer .copyright {
+  margin-top: 70px;
   background-color: #042259;
   text-align: center;
 }

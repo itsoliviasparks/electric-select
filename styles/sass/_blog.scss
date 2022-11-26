@@ -10,22 +10,36 @@
     }
 }
 
-.blog img {
-    width: 50%;
-    height: auto;
+.blog-post {
+    position: relative;
+    .right {
+        right: 0;
+    }
+    .left {
+        left: 0;
+    }
+        img {
+            position: absolute;
+            width: 50vw;
+            height: 50vw;
+        }
 }
 
 .blog-text {
-    width: 50%;
-    padding: 30px;
-    border: solid 1px hotpink;
     h2 {
+        padding: 0;
+        width: 40%;
         text-align: left;
-        width: 65%;
     }
-}
-
-.blog-post {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 70px;
+    width: 50%;
+    height: 50vw;
+    &.left {
+        margin-left: calc(50% + 70px);
+        padding-right: 0;
+    }
 }
