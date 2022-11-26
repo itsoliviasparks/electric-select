@@ -1,19 +1,22 @@
 @use "var" as *;
 
-.news-coffee ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 85px 0;
-        li {
-            width: 31%;
+.news-coffee {
+    padding-top: 70px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0;
+            li {
+                width: 31%;
+            }
         }
-    }
+}
 
 .coffee {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 85px;
+    padding-bottom: 70px;
     img {
         height: 315px;
         width: 315px;
