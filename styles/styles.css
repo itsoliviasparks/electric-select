@@ -517,7 +517,7 @@ footer .copyright a:visited {
 }
 .blog-post img {
   position: absolute;
-  width: 50vw;
+  width: 50%;
   height: 50vw;
 }
 
@@ -537,16 +537,17 @@ footer .copyright a:visited {
           align-items: flex-start;
   padding-right: 70px;
   width: 50%;
-  height: 50vw;
+  min-height: 50vw;
 }
 .blog-text h2 {
   padding: 0;
-  width: 40%;
+  width: 80%;
   text-align: left;
 }
 .blog-text.left {
-  margin-left: calc(50% + 70px);
+  margin-left: 50%;
   padding-right: 0;
+  padding-left: 70px;
 }
 
 .footer-links {
