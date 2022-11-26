@@ -1,10 +1,5 @@
 @use "var" as *;
 
-// font-family: 'Barlow', sans-serif;
-// font-family: 'Catamaran', sans-serif;
-// font-family: 'Emblema One', cursive;
-
-
 html {
     background-color: $light-pink;
     font-size: 62.5%;
@@ -62,7 +57,8 @@ h3 {
     margin: 0;
 }
 
-p {
+p,
+address a {
     font-size: 2.5rem;
     line-height: 29px;
     letter-spacing: 0.2px;
@@ -105,7 +101,7 @@ button {
 }
 
 .footer-links {
-   a {
+   a{
     @include emblema-one-font(3rem);
    }
     i {
@@ -114,4 +110,48 @@ button {
         text-align: center;
         padding-bottom: 20px;
     }
+}
+
+footer {
+    h2{
+    font-size: 2.5rem;
+    padding: 0 0 10px 0;
+    text-align: left;
+    }
+    p,
+    input {
+        font-size: 1.5rem;
+    }
+    button {
+        margin: 0;
+    }
+    address a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $darker-grey;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+            &:visited {
+                color: $water-blue;
+            }
+    }
+    .footer-nav a {
+        @include emblema-one-font(2.5rem);
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+        &:visited {
+            color: $marine;
+        }
+    }
+}
+
+.copyright {
+    color: $light-grey;
+    padding: 10px 0;
+
 }

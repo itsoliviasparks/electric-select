@@ -18,9 +18,37 @@
 
 footer {
     background-color: $pale-grey;
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 0;
     .wrapper {
         display: flex;
         justify-content: space-between;
+    }
+    form {
+        width: 50%;
+    }
+    input {
+        width: 100%;
+        border: $pale-rose solid 2px;
+        border-radius: 0;
+    }
+    .email-button{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    li {
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    .copyright {
+        background-color: $marine;
+        text-align: center;
     }
 }
