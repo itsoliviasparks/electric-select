@@ -35,7 +35,8 @@
         list-style: none;
         align-items: center;
         padding: 0;
-        // get outside of wrapper?
+        position: relative;
+        right: -70px;
         i {
             padding: 7px;
         }
@@ -46,5 +47,5 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -5;
 }

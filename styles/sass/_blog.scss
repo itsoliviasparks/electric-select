@@ -7,7 +7,6 @@
     }
     li {
         list-style: none;
-        width: 100%;
     }
 }
 
@@ -18,19 +17,15 @@
 
 .blog-text {
     width: 50%;
-    border: solid 1px red;
     padding: 30px;
+    border: solid 1px hotpink;
     h2 {
         text-align: left;
         width: 65%;
     }
 }
 
-// .blog-post {
-// display: flex;
-// justify-content: space-between;
-// }
-
 .blog-post {
-    border: solid 3px hotpink;
+display: flex;
+justify-content: space-between;
 }
