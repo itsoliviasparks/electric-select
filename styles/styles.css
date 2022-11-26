@@ -229,6 +229,7 @@ html {
 html {
   background-color: #FCDDE2;
   font-size: 62.5%;
+  margin: 0;
   font-family: "Barlow", sans-serif;
   color: #1F2022;
 }
@@ -257,7 +258,6 @@ h1 {
   text-transform: uppercase;
   color: #1D81CC;
   line-height: 87.3px;
-  margin: 0;
 }
 h1 span {
   display: block;
@@ -278,7 +278,6 @@ h3 {
   line-height: 37.8px;
   letter-spacing: 0.3px;
   color: #042259;
-  margin: 0;
 }
 
 p,
@@ -357,36 +356,38 @@ i {
 
 footer h2 {
   font-size: 2.5rem;
-  padding: 0 0 10px 0;
+  padding-top: 0;
   text-align: left;
 }
 footer p,
-footer input {
+footer input,
+footer address a {
   font-size: 1.5rem;
 }
-footer button {
+footer button,
+footer address p {
   margin: 0;
 }
 footer address a {
-  font-size: 1.5rem;
-  text-decoration: none;
   text-transform: lowercase;
-  font-style: normal;
-  color: #1F2022;
 }
-footer address a:visited {
-  color: #1D81CC;
+footer address {
+  font-style: normal;
 }
 footer .footer-nav a {
   font-size: 2.5rem;
   font-family: "Emblema One", cursive;
   text-transform: uppercase;
   color: #1D81CC;
-  text-decoration: none;
+}
+footer .footer-nav a:visited {
+  color: #042259;
 }
 footer .copyright p,
 footer .copyright a {
   color: #F0F5FF;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .header-nav {

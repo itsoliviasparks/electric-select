@@ -3,6 +3,7 @@
 html {
     background-color: $light-pink;
     font-size: 62.5%;
+    margin: 0;
     font-family: 'Barlow', sans-serif;
     color: $darker-grey;
 }
@@ -34,7 +35,6 @@ img {
 h1 {
     @include emblema-one-font(10.46rem);
     line-height: 87.3px;
-    margin: 0;
     span {
         display: block
     }
@@ -52,7 +52,6 @@ h3 {
     line-height: 37.8px;
     letter-spacing: 0.3px;
     color: $marine;
-    margin: 0;
 }
 
 p,
@@ -131,32 +130,34 @@ i {
 footer {
     h2{
     font-size: 2.5rem;
-    padding: 0 0 10px 0;
+    padding-top: 0;
     text-align: left;
     }
     p,
-    input {
+    input,
+    address a {
         font-size: 1.5rem;
     }
-    button {
+    button,
+    address p {
         margin: 0;
     }
     address a {
-        font-size: 1.5rem;
-        text-decoration: none;
         text-transform: lowercase;
+    }
+    address {
         font-style: normal;
-        color: $darker-grey;
-            &:visited {
-                color: $water-blue;
-            }
     }
     .footer-nav a {
         @include emblema-one-font(2.5rem);
-        text-decoration: none;
+        &:visited {
+            color: $marine;
+        }
     }
     .copyright p,
     .copyright a {
             color: $pale-grey;
+            margin: 0;
+            text-transform: capitalize;
         }
     }
