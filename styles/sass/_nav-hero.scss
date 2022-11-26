@@ -9,8 +9,7 @@
         display: flex;
         margin: 0;
         a {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 20px 0;
             padding-left: 45px;
         }
     }
@@ -25,9 +24,7 @@
         padding-top: 100px;
     }
     .socials {
-        list-style: none;
         align-items: center;
-        padding: 0;
         position: relative;
         right: -70px;
         i {
@@ -40,5 +37,5 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -5;
+    z-index: -1;
 }
