@@ -1,0 +1,36 @@
+@use "var" as *;
+
+.blog {
+    background-color: $pale-grey;
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        width: 100%;
+    }
+}
+
+.blog img {
+    width: 50%;
+    height: auto;
+}
+
+.blog-text {
+    width: 50%;
+    border: solid 1px red;
+    padding: 30px;
+    h2 {
+        text-align: left;
+        width: 65%;
+    }
+}
+
+// .blog-post {
+// display: flex;
+// justify-content: space-between;
+// }
+
+.blog-post {
+    border: solid 3px hotpink;
+}
