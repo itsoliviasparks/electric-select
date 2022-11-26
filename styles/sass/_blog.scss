@@ -2,12 +2,6 @@
 
 .blog {
     background-color: $pale-grey;
-    ul {
-        padding: 0;
-    }
-    li {
-        list-style: none;
-    }
 }
 
 .blog-post {
@@ -27,7 +21,6 @@
 
 .blog-text {
     h2 {
-        padding: 0;
         width: 80%;
         text-align: left;
     }
