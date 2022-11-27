@@ -3,7 +3,6 @@
 html {
     background-color: $light-pink;
     font-size: 62.5%;
-    margin: 0;
     font-family: 'Barlow', sans-serif;
     color: $darker-grey;
 }
@@ -35,6 +34,7 @@ img {
 h1 {
     @include emblema-one-font(10.46rem);
     line-height: 87.3px;
+    margin: 0;
     span {
         display: block
     }
@@ -43,8 +43,8 @@ h1 {
 h2 {
     @include emblema-one-font(4.2rem);
     text-align: center;
-    padding-top: 50px;
     padding-bottom: 10px;
+    margin: 0;
 }
 
 h3 {
@@ -52,6 +52,14 @@ h3 {
     line-height: 37.8px;
     letter-spacing: 0.3px;
     color: $marine;
+    margin: 0;
+}
+
+h4 {
+    @include emblema-one-font(2.4rem);
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
 }
 
 p,
@@ -128,11 +136,6 @@ i {
 }
 
 footer {
-    h2{
-    font-size: 2.5rem;
-    padding-top: 0;
-    text-align: left;
-    }
     p,
     input,
     address a {
