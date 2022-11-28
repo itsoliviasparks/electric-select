@@ -582,14 +582,12 @@ footer input {
   width: 100%;
   border: #F5C8CF solid 2px;
   border-radius: 0;
+  padding-left: 30px;
 }
 footer .email-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-footer .email-button input {
-  padding: 0 30px;
 }
 footer ul {
   display: -webkit-box;
@@ -615,7 +613,7 @@ footer .copyright {
 
 .contact-links {
   width: 50%;
-  padding-left: 70px;
+  padding-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

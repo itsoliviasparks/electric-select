@@ -28,12 +28,10 @@ footer {
         width: 100%;
         border: $pale-rose solid 2px;
         border-radius: 0;
+        padding-left: 30px;
     }
     .email-button{
         display: flex;
-        input {
-            padding: 0 30px;
-        }
     }
     ul {
         display: flex;
@@ -53,7 +51,7 @@ footer {
 
 .contact-links {
     width: 50%;
-    padding-left: 70px;
+    padding-left: 30px;
     display: flex;
     justify-content: space-between;
 }
