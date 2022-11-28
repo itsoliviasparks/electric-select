@@ -13,10 +13,16 @@ html {
     margin: 0 auto;
 }
 
+.section-padding {
+    padding: 70px 0;
+}
+.section-top {
+margin-top: 70px;
+}
+
 header,
 section {
     min-height: 100vh;
-    // border: solid 1px black;
 }
 
 img {
@@ -74,6 +80,7 @@ address a {
 // List Defaults & Buttons
 ul {
     padding: 0;
+    margin: 0;
 }
 li {
     list-style: none;
@@ -159,10 +166,12 @@ footer {
             color: $marine;
         }
     }
-    .copyright p,
-    .copyright a {
-            color: $pale-grey;
-            margin: 0;
-            text-transform: capitalize;
-        }
+    }
+
+.copyright p,
+.copyright a {
+        font-size: 1.5rem;
+        color: $pale-grey;
+        margin: 0;
+        text-transform: capitalize;
     }

@@ -1,7 +1,6 @@
 @use "var" as *;
 
 .news-coffee {
-    padding-top: 70px;
     ul {
         display: flex;
         justify-content: space-between;
@@ -16,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 70px;
     img {
         height: 315px;
         width: 315px;

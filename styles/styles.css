@@ -239,6 +239,14 @@ html {
   margin: 0 auto;
 }
 
+.section-padding {
+  padding: 70px 0;
+}
+
+.section-top {
+  margin-top: 70px;
+}
+
 header,
 section {
   min-height: 100vh;
@@ -300,6 +308,7 @@ address a {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -389,8 +398,10 @@ footer .footer-links a {
 footer .footer-links a:visited {
   color: #042259;
 }
-footer .copyright p,
-footer .copyright a {
+
+.copyright p,
+.copyright a {
+  font-size: 1.5rem;
   color: #F0F5FF;
   margin: 0;
   text-transform: capitalize;
@@ -452,9 +463,6 @@ footer .copyright a {
   padding: 7px;
 }
 
-.news-coffee {
-  padding-top: 70px;
-}
 .news-coffee ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,7 +486,6 @@ footer .copyright a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 70px;
 }
 .coffee img {
   height: 315px;
@@ -543,7 +550,6 @@ footer .copyright a {
   min-height: auto;
 }
 .nav-links ul {
-  padding: 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,7 +571,6 @@ footer .copyright a {
 
 footer {
   background-color: #F0F5FF;
-  padding-top: 70px;
 }
 footer .wrapper {
   display: -webkit-box;
@@ -605,11 +610,6 @@ footer ul {
 footer li {
   padding-bottom: 10px;
 }
-footer .copyright {
-  margin-top: 70px;
-  background-color: #042259;
-  text-align: center;
-}
 
 .contact-links {
   width: 50%;
@@ -620,6 +620,11 @@ footer .copyright {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.copyright {
+  background-color: #042259;
+  text-align: center;
 }
 
 /* Portrait tablet and small desktops */

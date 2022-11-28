@@ -3,7 +3,7 @@
 .nav-links {
     min-height: auto;
     ul {
-        padding: 70px 0;
+        // padding: 70px 0;
         display: flex;
         justify-content: space-around;
     }
@@ -16,7 +16,6 @@
 
 footer {
     background-color: $pale-grey;
-    padding-top: 70px;
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -42,11 +41,6 @@ footer {
     li {
         padding-bottom: 10px;
     }
-    .copyright {
-        margin-top: 70px;
-        background-color: $marine;
-        text-align: center;
-    }
 }
 
 .contact-links {
@@ -54,4 +48,9 @@ footer {
     padding-left: 30px;
     display: flex;
     justify-content: space-between;
+}
+
+.copyright {
+    background-color: $marine;
+    text-align: center;
 }
