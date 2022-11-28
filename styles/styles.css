@@ -396,6 +396,14 @@ footer .copyright a {
   text-transform: capitalize;
 }
 
+.hero {
+  max-width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .header-nav {
   height: 70px;
   display: -webkit-box;
@@ -442,13 +450,6 @@ footer .copyright a {
 }
 .title-socials .socials i {
   padding: 7px;
-}
-
-.hero {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
 }
 
 .news-coffee {
@@ -528,14 +529,14 @@ footer .copyright a {
   width: 50%;
   min-height: 50vw;
 }
-.blog-text h2 {
-  width: 80%;
-  text-align: left;
-}
 .blog-text.left {
   margin-left: 50%;
   padding-right: 0;
   padding-left: 70px;
+}
+.blog-text h2 {
+  width: 80%;
+  text-align: left;
 }
 
 .nav-links {
@@ -586,9 +587,9 @@ footer .email-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+footer .email-button input {
+  padding: 0 30px;
 }
 footer ul {
   display: -webkit-box;
@@ -601,6 +602,7 @@ footer ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 0;
 }
 footer li {
   padding-bottom: 10px;
@@ -609,4 +611,185 @@ footer .copyright {
   margin-top: 70px;
   background-color: #042259;
   text-align: center;
+}
+
+.contact-links {
+  width: 50%;
+  padding-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 92%;
+  }
+  header,
+section {
+    min-height: 70vh;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  .hero {
+    max-width: 75%;
+    bottom: 30vh;
+  }
+  .news-coffee {
+    padding-top: 30px;
+  }
+  .news-coffee ul {
+    padding: 30px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .news-coffee ul li {
+    width: 48%;
+  }
+  .news-coffee ul li:nth-child(3) {
+    display: none;
+  }
+  .coffee {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .coffee img {
+    width: 100%;
+  }
+  .coffee .coffee-text {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .coffee .coffee-text h2 {
+    text-align: center;
+    padding-top: 35px;
+  }
+  .coffee button {
+    display: block;
+    padding: 25px 40px;
+  }
+  .blog {
+    background-color: #FCDDE2;
+  }
+  .blog ul {
+    margin: 0;
+  }
+  .blog-post {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-post img {
+    position: static;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .blog-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0;
+    width: 100%;
+  }
+  .blog-text.left {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .blog-text h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .blog-text button {
+    color: #F0F5FF;
+    background-color: #042259;
+    margin-bottom: 30px;
+  }
+  .nav-links {
+    width: 100vw;
+    background-color: #F5C8CF;
+  }
+  .nav-links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .nav-links li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+  }
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer form,
+footer .contact-links {
+    width: 100%;
+  }
+  footer form {
+    justify-items: center;
+  }
+  footer form label {
+    text-align: center;
+  }
+  footer form label h4 {
+    text-align: center;
+  }
+  .email-button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .email-button input {
+    padding: 15px 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .contact-links {
+    width: 100%;
+    padding: 30px 0 0 0;
+  }
 }

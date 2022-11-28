@@ -1,4 +1,11 @@
 @use "var" as *;
+.hero {
+    max-width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
 
 .header-nav {
     height: 70px;
@@ -31,11 +38,4 @@
             padding: 7px;
         }
     }
-}
-
-.hero {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
 }

@@ -31,12 +31,15 @@ footer {
     }
     .email-button{
         display: flex;
-        justify-content: space-between;
+        input {
+            padding: 0 30px;
+        }
     }
     ul {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        margin: 0;
     }
     li {
         padding-bottom: 10px;
@@ -46,4 +49,11 @@ footer {
         background-color: $marine;
         text-align: center;
     }
+}
+
+.contact-links {
+    width: 50%;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-between;
 }
