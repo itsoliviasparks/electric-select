@@ -2,156 +2,161 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+    // _setup-fonts & _header
+    header,
+    section {
+        min-height: 80vh;
+    }
+    h1 {
+        font-size: 8rem;
+        line-height: 60px;
+    }
+    h2,
+    h3 {
+        font-size: 3rem;
+    }
+    .hero {
+        bottom: 20vh;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    // _news-coffee
+    .coffee {
+        flex-direction: column;
+        padding-bottom: 30px;
+        img {
+            width: 100%;
+        }
+        .coffee-text {
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                text-align: center;
+                padding-top: 35px;
+            }
+            button {
+                display: block;
+                padding: 25px 40px;
+            }
+        }
+    }
+    // _blog
+    .blog {
+        background-color: $light-pink;
+        ul {
+            margin: 0;
+        }
+    }
+    .blog-post {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        img {
+            position: static;
+            width: 100%;
+            padding-bottom: 30px;
+        }
+    }
+    .blog-text {
+        align-items: center;
+        padding-right: 0;
+        width: 100%;
+        &.left {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+        button {
+            color: $pale-grey;
+            background-color: $marine;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-// Need hamburger menu
-
-// _setup-fonts
-.wrapper {
-    width: 92%;
-}
-
-header,
-section {
-    min-height: 70vh;
-}
-
-h1 {
-    font-size: 5rem;
-    line-height: 40px;
-}
-h2 {
-    font-size: 3rem;
-}
-h3 {
-    font-size: 1.7rem;
-}
-// _header
-.hero {
-    max-width: 75%;
-    bottom: 30vh;
-}
-// what to do with .title-socials
-// _news-coffee
-.news-coffee {
-    padding-top: 30px;
-    ul {
-        padding: 30px 0;
-        flex-wrap: wrap;
-        li {
-            width: 48%;
-            &:nth-child(3) {
-                display: none;
+    // _setup-fonts
+    .wrapper {
+        width: 92%;
+    }
+    header,
+    section {
+        min-height: 70vh;
+    }
+    h1 {
+        font-size: 5rem;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    // _header
+    .hero {
+        max-width: 75%;
+        bottom: 30vh;
+    }
+    .news-coffee {
+        padding-top: 30px;
+        ul {
+            padding: 30px 0;
+            flex-wrap: wrap;
+            li {
+                width: 48%;
+                &:nth-child(3) {
+                    display: none;
+                }
             }
         }
     }
-}
-.coffee {
-    flex-direction: column;
-    padding-bottom: 30px;
-    img {
-        width: 100%;
-    }
-    .coffee-text {
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2 {
-            text-align: center;
-            padding-top: 35px;
-        }
-    }
-    button {
-        display: block;
-        padding: 25px 40px;
-    }
-}
-// _blog
-.blog {
-    background-color: $light-pink;
-    ul {
-        margin: 0;
-    }
-}
-.blog-post {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    img {
-        position: static;
-        width: 100%;
-        padding-bottom: 30px;
-    }
-}
-.blog-text {
-    align-items: center;
-    padding-right: 0;
-    width: 100%;
-    &.left {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    h2 {
-        width: 100%;
-        text-align: center;
-    }
-    button {
-        color: $pale-grey;
-        background-color: $marine;
-        margin-bottom: 30px;
-    }
-}
-// _footer
-.nav-links {
+    // _footer
+    .nav-links {
         width: 100vw;
         background-color: $pale-rose;
-    ul {
+        ul {
+            flex-direction: column;
+            margin: 0;
+        }
+        li {
+            align-items: center;
+            padding: 15px 0;
+        }
+    }
+    footer .wrapper {
         flex-direction: column;
-        margin: 0;
-    }
-    li {
         align-items: center;
-        padding: 15px 0;
     }
-}
-footer {
- .wrapper {
-    flex-direction: column;
-    align-items: center;
- }
- form,
- .contact-links {
-    width: 100%;
- }
- form {
-    justify-items: center;
-    label {
-        text-align: center;
-        h4 {
+    footer form,
+    .contact-links {
+        width: 100%;
+    }
+    footer form {
+        justify-items: center;
+        label {
+            text-align: center;
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+    .email-button {
+        flex-direction: column;
+        align-items: center;
+        input {
+            padding: 15px 0;
+            margin-bottom: 10px;
             text-align: center;
         }
     }
- }
-}
-.email-button {
-    flex-direction: column;
-    align-items: center;
-    input {
-        padding: 15px 0;
-        margin-bottom: 10px;
-        text-align: center;
+    .contact-links {
+        width: 100%;
+        padding: 30px 0 0 0;
     }
-}
-.contact-links {
-    width: 100%;
-    padding: 30px 0 0 0;
-}
 }
