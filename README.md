@@ -1,4 +1,5 @@
 # Electric Select 🌸
+<a href="https://itsoliviasparks.github.io/electric-select/">Live Site</a>
 
 ## About
 An exercise in taking a given design deck and translating it into HTML & Sass
